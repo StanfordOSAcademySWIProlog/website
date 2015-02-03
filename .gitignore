@@ -30,3 +30,6 @@
 # settings files
 *.db
 
+# Directory data
+.DS_Store
+
