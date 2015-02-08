@@ -7,7 +7,22 @@
 <link rel="stylesheet" href="/t-{{= cache_token }}/style.css">
 <body>
 	<div class="container">
-	    <header><h1>{{= title }}</h1></header>
+	    <header>
+	    	<h1>{{= title }}</h1>
+	    	<nav role="navigation">
+	    		<ul>
+	    			<li>
+	    				<a href="/page/intro">Intro</a>
+	    			</li>
+	    			<li>
+	    				<a href="/page/type">Type of Planners</a>
+	    			</li>
+	    			<li>
+	    				<a href="/page/tutorial">Tutorial</a>
+	    			</li>
+	    		</ul>
+	    	</nav>
+	    </header>
 	    <div class='content-div'>
 	        {{- html }}
 	    </div>
