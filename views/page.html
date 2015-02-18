@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/t-{{= cache_token }}/style.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <meta charset="UTF-8">
     <title>{{= title }}</title>
 </head>
+<link rel="stylesheet" href="/t-{{= cache_token }}/style.css">
 <body>
-<main>
-<article>
 	<div class="container">
-    <h1>{{= title }}</h1>
-    <p>
-        {{- html }}
-    </p>
+	    <header>
+	    	<h1>{{= title }}</h1>
+	    	<nav role="navigation">
+	    		<ul>
+	    			<li>
+	    				<a href="/page/intro"><button>Intro</button></a>
+	    			</li>
+	    			<li>
+	    				<a href="/page/type"><button>Type of Planners</button></a>
+	    			</li>
+	    			<li>
+	    				<a href="/page/tutorial"><button>Tutorial</button></a>
+	    			</li>
+	    			<li>
+	    				<a href="/page/problem"><button>Monkey and Bananas Problem</button></a>
+	    			</li>
+	    		</ul>
+	    	</nav>
+	    </header>
+	    <div class='content-div'>
+	        {{- html }}
+	    </div>
     </div>
-</article>    
-<main>   
 </body>
 </html>

@@ -1,0 +1,45 @@
+this is an outline of the tutorial.
+
+Like anything else, writing works better when it's done from a plan. 
+So I'm backbporting, making an outline of existing stuff.
+
+Introduction to Planning and Story Generation in SWI-Prolog
+===========================================================
+
+Introduction
+------------
+
+Introduce the idea of a planner.
+
+monkey/banana problem introduced
+
+What a planner needs (a bit muddled/repetitive)
+
+- reasion about effects of actions
+
+- how will we represent the world's state?
+- how will we represent actions?
+
+- reiterate locality of action
+
+summarize what we need (probably should be at top of this section
+
+Types of planners transition. (not obvious it's a transition).
+
+
+Credits
+
+End page 1
+
+Types of Planners
+=================
+
+brief list of planner applications.
+
+STRIPS Planners
+---------------
+
+
+
+
+

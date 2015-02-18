@@ -10,20 +10,20 @@
 :- route_get(/, send_front).
 
 send_front:-
-    (   ds_find(entry, slug=about, [About])
+    (   ds_find(entry, (slug=intro, type=page), [Intro])
     ->  bc_view_send(views/page, _{
-            html: About.html,
-            title: About.title
+            html: Intro.html,
+            title: Intro.title
         })
     ;   bc_view_not_found).
-
 
 :- route_get(page/Slug, send_page(Slug)).
 
 send_page(Slug):-
-    (   ds_find(entry, slug=Slug, [Page])
+    (   ds_find(entry, (slug=Slug, type=page), [Page])
     ->  bc_view_send(views/page, _{
             html: Page.html,
             title: Page.title
         })
     ;   bc_view_not_found).
+
